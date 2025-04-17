@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section .inner {
+    max-width: 1440px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+}
+
+.section_01 {
+    background-color: #eee;
+    padding: 160px 0;
+}
+
+.section_01 .inner .title {
+    margin-bottom: 50px;
+}
+
+.section_01 .inner .title h2 {
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.section_01 .inner .title p {
+    font-size: 22px;
+}
+
+.section_01 .inner .item_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_01 .inner .item_wrap>div {
+    width: 48.75%;
+    height: 546px;
+}
+
+.section_01 .inner .item_wrap .item_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .section_01 .inner .item_wrap .item_right .item:first-child {
+    margin-bottom: 36px;
+} */
+
+.section_01 .inner .item_wrap .item_right .item {
+    height: 255px;
+}
+
+.section_01 .inner .item_wrap .item_right .item .text {
+    top: 40px;
+    left: 40px;
+}
+
+.section_01 .inner .item_wrap .item {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section_01 .inner .item_wrap .item .image {
+    height: 100%;
+}
+
+.section_01 .inner .item_wrap .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section_01 .inner .item_wrap .item .text {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    color: #fff;
+}
+
+.section_01 .inner .item_wrap .item .text strong {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section_01 .inner .item_wrap .item .text p {
+    font-size: 18px;
+    font-weight: 300;
+
+    margin-top: 10px;
+}
+
+
+.section_02 {
+    padding: 160px 0;
+}
+
+.section_02 .inner .item_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_02 .inner .item_wrap .item {
+    width: 23.12%;
+}
+
+.section_02 .inner .item_wrap .item .image {
+    max-height: 400px;
+    height: 27.77vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.section_02 .inner .item_wrap .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section_02 .inner .item_wrap .item .text_box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.section_02 .inner .item_wrap .item .text_box span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+
+.section_02 .inner .item_wrap .item .text_box b {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.section_02 .inner .item_wrap .item .text_box .text {
+    display: flex;
+}
+
+.section_02 .inner .item_wrap .item .text_box .text strong {
+    font-size: 25px;
+    color: #333;
+    margin-right: 15px;
+}
+
+.section_02 .inner .item_wrap .item .text_box .text div {
+    font-size: 25px;
+    font-weight: 400;
+    color: #ff4a4a;
+}
+
+.section_03 {
+    padding-top: 160px;
+    padding-bottom: 237px;
+}
+
+.section_03 .inner .list {
+    margin: 160px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.section_03 .inner .list li .image {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section_03 .inner .list li .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section_03 .inner .list li p {
+    text-align: center;
+    margin-top: 19px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .section_01 .inner .item_wrap {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section_01 .inner .item_wrap>div {
+        width: 100%;
+        height: auto;
+    }
+
+    .section_01 .inner .item_wrap .item_left {
+        max-height: 551px;
+        height: 77.82vw;
+    }
+
+    .section_01 .inner .item_wrap .item_right {
+        gap: 30px;
+    }
+
+    .section_01 .inner .item_wrap .item_right .item {
+        height: 262px;
+    }
+
+    .section_02 .inner .item_wrap {
+        flex-wrap: wrap;
+        row-gap: 36px;
+    }
+
+    .section_02 .inner .item_wrap .item {
+        width: 47.75%;
+    }
+
+    .section_02 .inner .item_wrap .item .image {
+        height: 437.5px;
+    }
+
+    .section_03 .inner .list li {
+        width: 21.87%;
+    }
+
+    .section_03 .inner .list li .image {
+        width: 100%;
+        height: auto;
+        padding-bottom: 100%;
+        position: relative;
+    }
+
+    .section_03 .inner .list li .image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
